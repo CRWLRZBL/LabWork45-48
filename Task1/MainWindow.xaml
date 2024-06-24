@@ -1,0 +1,68 @@
+﻿<Window x:Class="Task1.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Task1"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="920" Width="1740">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="26"/>
+            <RowDefinition Height="26"/>
+            <RowDefinition Height="60"/>
+            <RowDefinition Height="35"/>
+            <RowDefinition Height="35"/>
+            <RowDefinition Height="60"/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Label x:Name="CheckLabel" Grid.Row="0"  Grid.ColumnSpan="2"/>
+        <Label Content="Input SQL command (correctly please)" Grid.Row="1"/>
+        <TextBox x:Name="GetCommandTextBox" Grid.Row="2"/>
+        <Label Content="LR45" Grid.Row="3" HorizontalAlignment="Center" Margin="0,0,0,9"/>
+        <RadioButton Grid.Row="3" Content="Task 2" x:Name="task2RB" VerticalAlignment="Bottom" HorizontalAlignment="Left" Margin="335,0,0,0"/>
+        <RadioButton Grid.Row="3" Content="Task 3" x:Name="task3RB" VerticalAlignment="Top" HorizontalAlignment="Center" Margin="0,20,0,0"/>
+        <RadioButton Grid.Row="3" Content="Task 4" x:Name="task4RB" VerticalAlignment="Bottom" HorizontalAlignment="Left" Margin="498,0,0,0"/>
+        <Label Content="LR47" Grid.Row="3" Grid.Column="1" VerticalAlignment="Top" HorizontalAlignment="Center"/>
+        <RadioButton Grid.Row="3" Content="Task 1" x:Name="task1_47RB" VerticalAlignment="Bottom" HorizontalAlignment="Left" Grid.Column="1" Margin="312,0,0,0"/>
+        <RadioButton Grid.Row="3" Content="Task 2" x:Name="task2_47RB" VerticalAlignment="Bottom" HorizontalAlignment="Left" Margin="384,0,0,0" Grid.Column="1"/>
+        <RadioButton Grid.Row="3" Content="Task 3" x:Name="task3_47RB" VerticalAlignment="Bottom" HorizontalAlignment="Left" Margin="453,0,0,0" Grid.Column="1"/>
+        <RadioButton Grid.Row="3" Content="Task 4" x:Name="task4_47RB" VerticalAlignment="Bottom" HorizontalAlignment="Left" Margin="521,0,0,0" Grid.Column="1"/>
+        <Label Content="LR46" Grid.Row="4" VerticalAlignment="Top" HorizontalAlignment="Center"/>
+        <RadioButton Grid.Row="4" Content="Task 1" x:Name="task1_46RB" VerticalAlignment="Bottom" HorizontalAlignment="Left" Margin="310,0,0,0" />
+        <RadioButton Grid.Row="4" Content="Task 2" x:Name="task2_46RB" VerticalAlignment="Bottom" HorizontalAlignment="Left" Margin="384,0,0,0"/>
+        <RadioButton Grid.Row="4" Content="Task 3" x:Name="task3_46RB" VerticalAlignment="Bottom" HorizontalAlignment="Left" Margin="453,0,0,0"/>
+        <RadioButton Grid.Row="4" Content="Task 4" x:Name="task4_46RB" VerticalAlignment="Bottom" HorizontalAlignment="Center" Margin="240,0,0,0"/>
+        <Label Content="LR48" Grid.Row="4" VerticalAlignment="Top" HorizontalAlignment="Center" Grid.Column="1"/>
+        <RadioButton Grid.Row="4" Content="Task 2" x:Name="task2_48RB" VerticalAlignment="Bottom" HorizontalAlignment="Left" Margin="335,0,0,0" Grid.Column="1"/>
+        <RadioButton Grid.Row="4" Content="Task 3" x:Name="task3_48RB" VerticalAlignment="Bottom" HorizontalAlignment="Left" Margin="402,0,0,0" Grid.Column="1"/>
+        <RadioButton Grid.Row="4" Content="Task 4" x:Name="task4_48RB" VerticalAlignment="Bottom" HorizontalAlignment="Left" Margin="475,0,0,0" Grid.Column="1"/>
+        <Label Content="Table's ID" Grid.Row="2" HorizontalAlignment="Left" Grid.Column="1" VerticalAlignment="Top"/>
+        <TextBox x:Name="TableIDTextBox" Width="75" HorizontalAlignment="Left" Margin="68,0,0,0" Grid.Row="2" Grid.Column="1" VerticalAlignment="Top"/>
+        <Label Content="Table's name" Grid.Row="2" HorizontalAlignment="Left" Margin="148,0,0,0" Width="83" Grid.Column="1" VerticalAlignment="Top"/>
+        <TextBox x:Name="TableNameTextBox" Width="212" HorizontalAlignment="Left" Margin="231,0,0,0" Grid.Row="2" Grid.Column="1" VerticalAlignment="Top"/>
+        <Label Content="Price" Grid.Row="2" HorizontalAlignment="Left" Margin="443,0,0,0" Width="37" Grid.Column="1" VerticalAlignment="Top" Height="26"/>
+        <TextBox x:Name="PriceTextBox" Width="114" HorizontalAlignment="Left" Margin="480,0,0,0" Grid.Row="2" Grid.Column="1" VerticalAlignment="Top"/>
+        <Label Content="Genre" Grid.Row="2" HorizontalAlignment="Left" Margin="594,0,0,0" Width="49" Grid.Column="1" VerticalAlignment="Top"/>
+        <TextBox x:Name="GenreTextBox" Width="114" HorizontalAlignment="Left" Margin="643,0,0,0" Grid.Row="2" Grid.Column="1" VerticalAlignment="Top"/>
+        <Label Content="New author's name" Grid.Row="2" HorizontalAlignment="Left" Grid.Column="1" VerticalAlignment="Bottom"/>
+        <TextBox x:Name="AuthorNameTextBox" Width="75" HorizontalAlignment="Left" Margin="113,0,0,0" Grid.Row="2" Grid.Column="1" VerticalAlignment="Bottom"/>
+        <Label Content="Surname" Grid.Row="2" HorizontalAlignment="Left" Margin="190,0,0,0" Width="82" Grid.Column="1" VerticalAlignment="Bottom"/>
+        <TextBox x:Name="SurnameTextBox" Width="142" HorizontalAlignment="Left" Margin="245,0,0,0" Grid.Row="2" Grid.Column="1" VerticalAlignment="Bottom"/>
+        <Label Content="Country" Grid.Row="2" HorizontalAlignment="Left" Margin="391,0,0,0" Width="52" Grid.Column="1" VerticalAlignment="Bottom"/>
+        <TextBox x:Name="CountryTextBox" Width="114" HorizontalAlignment="Left" Margin="443,0,0,0" Grid.Row="2" Grid.Column="1" VerticalAlignment="Bottom"/>
+        <Label Content="Min price" Grid.Row="2" HorizontalAlignment="Left" Margin="557,0,0,0" Width="61" Grid.Column="1" VerticalAlignment="Bottom"/>
+        <TextBox x:Name="MinPriceTextBox" Width="56" HorizontalAlignment="Left" Margin="614,0,0,0" Grid.Row="2" Grid.Column="1" VerticalAlignment="Bottom"/>
+        <Label Content="Max price" Grid.Row="2" HorizontalAlignment="Left" Margin="670,0,0,0" Width="64" Grid.Column="1" VerticalAlignment="Bottom"/>
+        <TextBox x:Name="MaxPriceTextBox" Width="70" HorizontalAlignment="Left" Margin="734,42,0,0" Grid.Row="2" Grid.Column="1" VerticalAlignment="Top"/>
+        <Button Grid.Row="5" Content="Save table" x:Name="saveTableButton" Margin="620,0,0,0" Click="saveTableButton_Click" Grid.Column="1"/>
+        <Label x:Name="OutPutLabel" Grid.Row="5" />
+        <Button x:Name="ExecButton" Content="RUN" Grid.Column="1" Grid.Row="5" Click="ExecButton_Click" Margin="0,0,250,0"/>
+        <DataGrid Grid.Row="6" x:Name="OutputDG" Grid.ColumnSpan="2"></DataGrid>
+
+    </Grid>
+</Window>

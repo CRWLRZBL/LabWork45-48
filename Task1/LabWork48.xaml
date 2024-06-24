@@ -1,0 +1,25 @@
+﻿<Window x:Class="Task1.LabWork48"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Task1"
+        mc:Ignorable="d"
+        Title="LabWork48" Height="450" Width="800">
+    <StackPanel>
+        <TextBox x:Name="surnameTextBox"/>
+        <TextBox x:Name="nameTextBox"/>
+        <TextBox x:Name="countryTextBox"/>
+        <Button Content="Добавить автора" Click="AddAuthorButton_Click" x:Name="addAuthorButton"/>
+
+        <TextBox x:Name="surnameIdTextBox"/>
+        <TextBox x:Name="nameTextIdBox"/>
+        <TextBox x:Name="countryIdTextBox"/>
+        <Button Content="Добавить автора и узнать ID" Click="AddAuthorIdButton_Click" x:Name="addAuthorIdButton"/>
+
+        <DataGrid x:Name="bookTable"/>
+        <TextBox x:Name="minPriceTextBox"/>
+        <TextBox x:Name="maxPriceTextBox"/>
+        <Button x:Name="dataGridButton" Content="Показать таблицу" Click="DataGridButton_Click"/>
+    </StackPanel>
+</Window>
